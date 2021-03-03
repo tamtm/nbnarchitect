@@ -10,11 +10,15 @@ img
 .container
 	max-width: 980px
 	margin: auto
+	padding: 1em
+
+.row
 	display: flex
+	&.container
+		padding: 0
 	> div 
 		width: 50%
 		padding: 1em
-
 
 #background-img
 	min-height: 100vh
@@ -38,7 +42,7 @@ img
 	top: 0
 	left: 0
 	right: 0
-	bottom: 0
+	bottom: 10%
 	min-height: 140px
 	display: flex
 	flex-flow: column wrap
@@ -61,7 +65,11 @@ img
 			fill:#FFF
 	&.hang &-logo svg .st0
 		fill: #000
+	&-links
+		margin: 1.5em
 	&-link
+		font-size: 1.125em
 		color: inherit
 		text-transform: uppercase
 		text-decoration: none
+		padding: .5em 1em
