@@ -86,7 +86,8 @@ img {
   margin-top: 100vh; }
 
 .section {
-  background: rgba(255, 255, 255, 0.9); }
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2em 0; }
 
 .nav {
   position: fixed;
@@ -123,7 +124,11 @@ img {
   .nav-logo {
     height: 8em;
     width: auto;
-    display: block; }
+    display: block;
+    margin: 1em 2em;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
     .nav-logo svg {
       height: 100%;
       width: auto; }
@@ -132,7 +137,10 @@ img {
   .nav.hang .nav-logo svg .st0 {
     fill: #000; }
   .nav-links {
-    margin: 1.5em; }
+    margin: 1.5em;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
   .nav-link {
     font-size: 1.125em;
     color: inherit;
