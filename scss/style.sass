@@ -8,7 +8,7 @@ img
 	height: auto
 
 .container
-	max-width: 980px
+	max-width: 1200px
 	margin: auto
 	padding: 1em
 
@@ -20,60 +20,59 @@ img
 		width: 50%
 		padding: 1em
 
-#background-img
-	min-height: 100vh
-	min-width: 100vh
-	height: auto
-	width: auto
-	position: fixed
-	margin: auto
-	z-index: -1
-	top: 0
-	
-#about
-	margin-top: 100vh
-
-.section
-	background: rgba(255, 255, 255, 0.9)
-	padding: 2em 0
-.nav
-	position: fixed
-	z-index: 1
-	color: #fff
-	top: 0
-	left: 0
-	right: 0
-	bottom: 10%
-	min-height: 140px
-	display: flex
-	flex-flow: column wrap
-	justify-content: center
-	align-items: center
-	align-content: center
-	transition: all 
-	&.hang
-		align-content: space-between
-		background: #fff
-		color: #000
-	&-logo
-		height: 8em
+#logo
+	svg
+		height: 5.6em
 		width: auto
-		display: block
-		margin: 1em 2em
-		transition: all .2s
-		svg
-			height: 100%
-			width: auto
-		.st0
-			fill:#FFF
-	&.hang &-logo svg .st0
-		fill: #000
+		path
+			// fill: #fff
+
+html, body
+	height: 100%
+
+#header
+	position: absolute
+	left: 0
+	top: 0
+	right: 0
+
+#main
+	height: 100vh
+#footer
+	.container
+		display: flex
+		justify-content: space-between
+	&-about
+		max-width: 28em
 	&-links
-		margin: 1.5em
-		transition: all .2s
-	&-link
-		font-size: 1.125em
-		color: inherit
-		text-transform: uppercase
-		text-decoration: none
-		padding: .5em 1em
+		text-align: right
+		position: relative
+		top: -1em
+
+#projects
+	display: flex
+	flex-flow: row wrap
+	padding: .5em
+	.project
+		width: calc(25% - 1em)
+		height: 20em
+		margin: .5em
+		background: #999
+		text-align: center
+		position: relative
+		overflow: hidden
+		.blur-bg
+			position: absolute
+			z-index: 0
+			top: -10%
+			left: -10%
+			min-height: 120%
+			min-width: 120%
+			filter: blur(5px)
+		img
+			position: relative
+			z-index: 1
+			max-width: 100%
+			max-height: 100%
+			height: auto
+			width: auto
